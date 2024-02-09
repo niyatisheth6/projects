@@ -1,0 +1,104 @@
+.container {
+  @apply mx-auto max-w-[1240px] px-3;
+}
+.main-header {
+  @apply bg-blue-800 py-4;
+}
+.header {
+  @apply flex justify-between items-center text-white;
+}
+.header-menu {
+  @apply flex gap-28 list-none;
+}
+.header-menu li a {
+  @apply no-underline text-xl text-white;
+}
+.login {
+  @apply flex justify-center gap-20;
+}
+.login button {
+  @apply p-4 mt-8;
+}
+.student-list,
+.lecture {
+  @apply py-3 px-10 w-fit text-2xl;
+}
+.student-list li a {
+  @apply no-underline text-2xl text-black;
+}
+.main {
+  @apply flex flex-col gap-2 text-3xl mt-[40px];
+}
+.lecture li a .add-list {
+  @apply no-underline text-2xl text-black;
+}
+.add-list li {
+  @apply mb-3 text-2xl text-black;
+}
+.list {
+  @apply cursor-pointer;
+}
+.notfound {
+  @apply text-2xl flex justify-center items-center font-bold h-[90vh];
+}
+.title {
+  @apply text-3xl font-bold text-white bg-blue-400 text-center py-2;
+}
+.description {
+  @apply text-[20px];
+}
+.title-sm {
+  @apply text-3xl;
+}
+.btn {
+  @apply py-3 px-2 bg-blue-500 text-2xl text-white font-bold rounded-md;
+}
+.form-group {
+  @apply flex flex-col w-full;
+}
+.form-label {
+  @apply inline-block mb-[1px] text-2xl;
+}
+.form-control {
+  @apply rounded-md py-[9px] px-[13px];
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.heading-md {
+  @apply text-3xl leading-9 font-extrabold text-center !text-[#3A3A3A];
+}
+.link {
+  @apply text-[#13007C] text-base leading-5 font-semibold text-center;
+}
+.form-data {
+  @apply flex flex-col gap-6;
+}
+.btn-primary {
+  @apply !bg-blue-800 py-[9px] px-[17px] rounded-md w-full text-white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.error {
+  @apply text-red-500 font-medium ml-2;
+}
+.invalid {
+  @apply border-red-500;
+}
+.detailscard {
+  @apply p-3 rounded-md w-[500px] h-[200px];
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.book-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin: 20px;
+  display: inline-block;
+}
+.book-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.book-card_data {
+  padding: 16px;
+}

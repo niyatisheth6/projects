@@ -1,0 +1,53 @@
+{
+  "student": [
+    {
+      "firstname": "niyu",
+      "email": "n@gmail.com",
+      "password": "111111",
+      "cpassword": "111111",
+      "id": 1
+    },
+    {
+      "firstname": "dev",
+      "email": "dev@gmail.com",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 2
+    },
+    {
+      "firstname": "kinjal",
+      "email": "kinjal@gmail.com",
+      "password": "Pa$$w0rd!",
+      "cpassword": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "firstname": "yashvi",
+      "email": "yashvi@gmail.com",
+      "password": "Pa$$w0rd!",
+      "cpassword": "Pa$$w0rd!",
+      "id": 4
+    },
+    {
+      "firstname": "ram",
+      "email": "ram@gmail.com",
+      "password": "Pa$$w0rd!",
+      "cpassword": "Pa$$w0rd!",
+      "id": 5
+    },
+    {
+      "firstname": "sita",
+      "email": "sita@gmail.com",
+      "password": "111111",
+      "cpassword": "111111",
+      "id": 6
+    },
+    {
+      "firstname": "rahul",
+      "email": "rahul@gmail.com",
+      "password": "123456",
+      "cpassword": "123456",
+      "id": 7
+    }
+  ]
+}

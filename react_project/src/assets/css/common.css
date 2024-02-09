@@ -1,0 +1,100 @@
+.container {
+  @apply max-w-[1350px] mx-auto h-full;
+}
+.card {
+  @apply bg-white rounded-lg py-[32px] px-[40px];
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.heading {
+  @apply text-3xl leading-9 font-extrabold text-center !text-[#3A3A3A];
+}
+.form-group {
+  @apply flex flex-col w-full;
+}
+.form-label {
+  @apply inline-block mb-[1px] text-2xl;
+}
+.form-control {
+  @apply rounded-md py-[9px] px-[13px];
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.btn-primary {
+  @apply !bg-[#13007C] py-[9px] px-[17px] rounded-md w-full text-white hover:bg-[#281f57];
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+.form-data {
+  @apply flex flex-col gap-6;
+}
+.link {
+  @apply text-[#13007C] text-base leading-5 font-semibold text-center;
+}
+.header {
+  @apply flex justify-between text-white py-3 items-center;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+input[type="radio"] {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+table {
+  @apply rounded-3xl text-xl;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  @apply p-2;
+  border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  @apply bg-[#f2f2f2];
+}
+
+tr:hover {
+  @apply rounded-lg bg-[#ddd];
+}
+
+th {
+  @apply py-3 text-left bg-[#f1f7ff];
+}
+.error {
+  @apply text-red-500 font-medium ml-2;
+}
+.invalid {
+  @apply border-red-500;
+}
+/* Default styles */
+.responsive-chart {
+  width: 100%; /* Default width for smaller screens */
+  height: auto; /* Default height, adjusts automatically */
+}
+
+/* Medium screens (adjust as needed) */
+@media screen and (min-width: 768px) {
+  .responsive-chart {
+    width: 50%; /* 50% width on medium screens */
+    height: auto; /* Default height */
+  }
+}
+
+/* Large screens (adjust as needed) */
+@media screen and (min-width: 1024px) {
+  .responsive-chart {
+    width: 20%; /* 30% width on large screens */
+    height: auto; /* Default height */
+  }
+}
+
+/* Large screens (adjust as needed) */
+@media screen and (min-width: 1024px) {
+  .responsive-chart_other {
+    width: 30% !important; /* 30% width on large screens */
+    height: auto; /* Default height */
+  }
+}

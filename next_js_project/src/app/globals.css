@@ -1,0 +1,4 @@
+@import "../../assets/css/common.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

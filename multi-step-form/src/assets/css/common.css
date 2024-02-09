@@ -1,0 +1,168 @@
+.card {
+  @apply p-5 max-w-[50%] mx-auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.registation_form {
+  @apply max-w-2xl w-full rounded-md p-3;
+  background: linear-gradient(to bottom, #8debff 0%, #6cacff 100%);
+}
+.heading {
+  @apply text-3xl leading-7 font-semibold text-center mb-3;
+}
+.form {
+  @apply p-3 rounded-md;
+  background: linear-gradient(to bottom, #8debff 0%, #6cacff 100%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-group {
+  @apply flex flex-col mb-3 w-full;
+}
+.form-label {
+  @apply text-xl inline-block mb-[0.5px];
+}
+.form-control {
+  @apply outline-none border p-3 rounded-lg border-solid border-gray-400;
+}
+.btn-primary {
+  @apply py-4 px-24  rounded-xl text-xl font-semibold leading-6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(to bottom, #f8c390 0%, #d279ee 100%) !important;
+}
+.btn-secondary {
+  @apply bg-slate-950 text-white py-4 px-10  rounded-xl text-xl font-semibold leading-6;
+}
+.error {
+  @apply text-red-500 font-medium ml-2;
+}
+.invalid {
+  @apply border-red-500;
+}
+.form-radio-btn {
+  @apply flex flex-col mb-3;
+}
+.radio-btn {
+  @apply flex gap-4 ml-5;
+}
+.check-btn,
+.selection {
+  @apply flex gap-3 mb-3;
+}
+table {
+  @apply rounded-3xl text-xl;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  @apply p-2 text-center;
+  border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  @apply bg-[#f2f2f2];
+}
+
+tr:hover {
+  @apply rounded-lg bg-[#ddd];
+}
+
+th {
+  @apply py-3 text-left bg-[#f1f7ff];
+}
+.text-field {
+  @apply flex gap-2 justify-between;
+}
+
+.tabs-container {
+  width: 300px; /* Set the width of the tabs container */
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.tab.active {
+  border-bottom: 2px solid blue; /* Set the color of the active tab border */
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+.multi-steps > li.is-active:before,
+.multi-steps > li.is-active ~ li:before {
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 700;
+}
+.multi-steps > li.is-active:after,
+.multi-steps > li.is-active ~ li:after {
+  background-color: #ededed;
+}
+
+.multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.multi-steps > li {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: tomato;
+}
+.multi-steps > li:before {
+  content: "\f00c";
+  content: "\2713;";
+  content: "\10003";
+  content: "\10004";
+  content: "\2713";
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  border-width: 2px;
+  border-style: solid;
+  border-color: tomato;
+  border-radius: 50%;
+}
+.multi-steps > li:after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: tomato;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: -1;
+}
+.multi-steps > li:last-child:after {
+  display: none;
+}
+.multi-steps > li.is-active:before {
+  background-color: #fff;
+  border-color: tomato;
+}
+.multi-steps > li.is-active ~ li {
+  color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+  background-color: #ededed;
+  border-color: #ededed;
+}
